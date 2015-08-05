@@ -1,0 +1,9 @@
+---
+applications:
+- name: catalog-api
+  command: node app.js
+  memory: 256M 
+  instances: 3
+  host: catalog-api
+  services:
+   - cassandraOrder
